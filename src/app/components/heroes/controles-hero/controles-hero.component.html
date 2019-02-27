@@ -1,0 +1,23 @@
+<div class="jumbotron mt-2">
+  <h1 class="display-4">Insertar superheroe</h1>
+  <p class="lead">Introduce los siguientes datos</p>
+  <hr class="my-4">
+  <div class="row mt-3">
+      <div class="col-sm col-lg-6">
+        <input type="text" class="form-control" [(ngModel)]="newHeroName" placeholder="Nombre">
+      </div>
+      <div class="col-sm col-lg-6">
+        <input type="text" class="form-control" [(ngModel)]="descripcionHero" placeholder="Descripción"
+          aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-3">
+      <div class="col-sm col-lg-2">
+        <button class="btn btn-primary" value="Mostrar/Ocultar" (click)="showHideList()">Mostrar/Ocultar</button><br>
+      </div>
+      <div class="col-sm col-lg-2">
+        <button class="btn btn-primary" type="button" id="button-addon1" (click)="addHero()">Añadir</button>
+      </div>
+    </div>
+</div>
+

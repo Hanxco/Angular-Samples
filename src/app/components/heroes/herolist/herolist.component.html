@@ -1,0 +1,6 @@
+<div class="container">
+  <app-controles-hero (signal)="addHero($event)"></app-controles-hero>
+  <app-listado-hero [arrHeroes]="heroes" (remove)="removeHero($event)" (modify)="modifyHero($event)"
+                    (puntuacion)="puntuar($event)"></app-listado-hero>
+</div>
+

@@ -1,0 +1,29 @@
+<table>
+  <tr>
+    <td><input type="button" value="7" (click)="entradaNumero(7)" class="btn btn-primary"></td>
+    <td><input type="button" value="8" (click)="entradaNumero(8)" class="btn btn-primary"></td>
+    <td><input type="button" value="9" (click)="entradaNumero(9)" class="btn btn-primary"></td>
+    <td><input type="button" value="+" (click)="entradaOperador('+')" class="btn btn-danger"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="4" (click)="entradaNumero(4)" class="btn btn-primary"></td>
+    <td><input type="button" value="5" (click)="entradaNumero(5)" class="btn btn-primary"></td>
+    <td><input type="button" value="6" (click)="entradaNumero(6)" class="btn btn-primary"></td>
+    <td><input type="button" value="-" (click)="entradaOperador('-')" class="btn btn-danger"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="1" (click)="entradaNumero(1)" class="btn btn-primary"></td>
+    <td><input type="button" value="2" (click)="entradaNumero(2)" class="btn btn-primary"></td>
+    <td><input type="button" value="3" (click)="entradaNumero(3)" class="btn btn-primary"></td>
+    <td><input type="button" value="/" (click)="entradaOperador('/')" class="btn btn-danger"></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="0" (click)="entradaNumero(0)" class="btn btn-primary"></td>
+    <td><input type="button" value="." (click)="entradaNumero('.')" class="btn btn-primary"></td>
+    <td><input type="button" class="btn btn-primary" (click)="this.service.calcular()" value="="></td>
+    <td><input type="button" value="*" (click)="entradaOperador('*')" class="btn btn-danger"></td>
+  </tr>
+  <tr>
+    <td><input type="button" class="btn btn-primary" (click)="limpiar();" value="C"></td>
+  </tr>
+</table>

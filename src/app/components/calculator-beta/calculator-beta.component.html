@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">SUPER CALCULATOR</h1>
+    </div>
+    <div class="row">
+      <div class="col col-lg-6">
+        <table class="table table-hover table-sm">
+          <tr>
+            <td><input type="button" value="1" (click)="handleNumber(1)" class="btn btn-primary"></td>
+            <td><input type="button" value="2" (click)="handleNumber(2)" class="btn btn-primary"></td>
+            <td><input type="button" value="3" (click)="handleNumber(3)" class="btn btn-primary"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="4" (click)="handleNumber(4)" class="btn btn-primary"></td>
+            <td><input type="button" value="5" (click)="handleNumber(5)" class="btn btn-primary"></td>
+            <td><input type="button" value="6" (click)="handleNumber(6)" class="btn btn-primary"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="7" (click)="handleNumber(7)" class="btn btn-primary"></td>
+            <td><input type="button" value="8" (click)="handleNumber(8)" class="btn btn-primary"></td>
+            <td><input type="button" value="9" (click)="handleNumber(9)" class="btn btn-primary"></td>
+          </tr>
+          <tr>
+              <td><input type="button" value="0" (click)="handleNumber(0)" class="btn btn-primary"></td>
+              <td><input type="button" value="." (click)="handleNumber('.')" class="btn btn-primary"></td>
+          </tr>
+        </table> 
+      </div>
+      <div class="col col-lg-6">
+        <table>
+          <tr>
+            <td><input type="button" value="+" (click)="handleSymbol('+')"  class="btn btn-danger"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="-" (click)="handleSymbol('-')"  class="btn btn-danger"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="/" (click)="handleSymbol('/')"  class="btn btn-danger"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="*" (click)="handleSymbol('*')" class="btn btn-danger"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col col-lg-4">
+          <input type="text" placeholder="TU RESULTADO" [value]="display">
+      </div>
+      <div class="col-lg-4"><input type="button" (click)="resolve();" value="Calculator"></div>
+    </div>
+  </div>
